@@ -1,15 +1,13 @@
 //problem 1
-function cubeNumber(numbers) {
+function cubeNumber(number) {
     if (typeof number !== "number") {
-        return "enter your valid number "
+        return "please provide a number"
     }
-    return numbers ** 3;
-
+    return number ** 3;
 
 }
-const input = cubeNumber();
-console.log(input)
-
+const input = cubeNumber(4);
+console.log(input);
 
 
 
@@ -26,15 +24,12 @@ function matchFinder(string1, string2) {
 
 }
 const string1 = "John Doe";
-const string2 = "doe";
-const result = matchFinder(string1, string2)
-console.log(result)
+const string2 = "Doe";
+const result = matchFinder(string1, string2);
+console.log(result);
 
 
-
-
-
-// problem-4
+// problem - 4
 function findAddress(yourObject) {
     const keys = ["street", "house", "society"];
     const outputArray = keys.map(key => yourObject[key] || "__");
@@ -71,9 +66,9 @@ function canPay(coins, price) {
     }
 }
 
-console.log(canPay([1, 2, 5], 10))
+// console.log(canPay([1, 2, 5], 10))
 
-// console.log(canPay([1, 5, 5], 10))
+console.log(canPay([1, 5, 5], 10))
 
 // console.log(canPay([], 10))
 
